@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/loginStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="../static/js/script.js" defer></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="img">
+        <img src="../static/img/login_background.jpg" alt="logo_bg" />
+      </div>
+      <div class="main">
+        <ul>
+          <li><a class="login" href="#">LogIn</a></li>
+          <li><a class="register" href="#">Register</a></li>
+        </ul>
+        <div class="login_form">
+          <form action="#" onsubmit="return validations_Login()">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" /><br />
+            <label for="pasw">Password</label>
+            <input type="password" name="pasw" id="pasw" /><br />
+            <button class="btn_login">LogIn</button>
+          </form>
+        </div>
+        <div class="register_form">
+          <form action="" onsubmit="return validations_Register()">
+            <label for="name">Firstname</label>
+            <input type="text" name="name" id="name" /><br />
+            <label for="lname">Lastname</label>
+            <input type="text" name="lname" id="lname" /><br />
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" /><br />
+            <label for="pw">Password</label>
+            <input type="password" name="pw" id="pw" /><br />
+            <button>Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
